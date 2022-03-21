@@ -309,10 +309,11 @@ body{
 
 @media (max-width: 600px) {
     .carousel-section .content .custom-input-group{
-        width: 320px;
+        width: 300px;
     }
     .carousel-section .content button{
-        padding: 15px 20px;
+        padding: 13px 15px;
+        font-size: 16px;
     }
     .carousel-section .content .title{
         font-size: 35px;
@@ -451,7 +452,7 @@ body{
     border-color: #c7a54a;
 }
 .card-slide-section .swiper {
-    width: 340px;
+    width: 320px;
     height: 440px;
 }
 .card-slide-section .swiper-slide {
@@ -465,8 +466,8 @@ body{
 }
 @media (max-width: 500px) {
     .card-slide-section .swiper {
-        width: 250px;
-        height: 350px;
+        width: 200px;
+        height: 320px;
     }
 }
 /*  End Slide section Style*/
@@ -610,6 +611,10 @@ footer .footer-logo{
         position: fixed;
         left: 10px;
         bottom: 20px;
+    }
+    #whatsapp img{
+        width: 55px;
+        height: auto;
     }
 }
 
