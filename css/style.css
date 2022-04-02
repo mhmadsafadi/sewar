@@ -74,7 +74,6 @@ body{
     background-color: var(--main-color);
     border-radius: 10px;
 }
-
 .navbar .btn-link{
     color: var(--text-color);
     border: 0;
@@ -82,10 +81,22 @@ body{
     text-decoration: none;
     font-size: 18px;
 }
+
+@media (max-width: 992px) {
+    .navbar .btn-link .user-cyrcle{
+        background-color: #af8b2728;
+        border-radius: 50%;
+        margin-right: 5px;
+        padding: 5px 10px;
+    }
+    .navbar .btn-link .user-cyrcle i{
+        color: var(--hover-color);
+        font-size: 22px;
+    }
+}
 .navbar .btn-link i{
     color: #555555;
     font-size: 20px;
-    margin-right: 5px;
 }
 .navbar .btn-link:hover,
 .navbar .btn-link:hover > i{
@@ -174,26 +185,36 @@ body{
     animation-name: fadeUp;
     animation-duration: 1.2s;
 }
-.carousel-section .content .custom-input-group{
+.carousel-section .content .sub-desc{
     display: flex;
-    width: 500px;
     justify-content: center;
     align-items: center;
-    margin: 40px auto 0 auto;
-    background-color: transparent;
-    border-radius: 20px;
-    border: 1px solid var(--main-color);
-    padding: 0 5px 0 0;
     animation-name: fadeUp;
     animation-duration: 1.5s;
 }
-.carousel-section .content input{
-    flex-grow: 1;
-    background-color: transparent;
-    outline: none;
-    border: none;
-    color: #ffffff;
+.carousel-section .content .sub-desc span{
+    color: var(--white-color);
+    font-size: 20px;
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    padding: 4px 8px;
 }
+.carousel-section .content a{
+    padding: 7px 10px;
+    background-color: var(--main-color);
+    color: #ffffff;
+    border-style: none;
+    border-radius: 10px;
+    font-size: 18px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+.carousel-section .content a:hover{
+    background-color: #ffffff;
+    transition: .3s ease-in-out;
+    color:  var(--main-color);
+}
+
 @keyframes fadeUp {
     0% {
         opacity: 0;
@@ -203,21 +224,23 @@ body{
         opacity: 1;
      }
 }
-.carousel-section .content input::placeholder{
-    color: #ececec;
-}
-.carousel-section .content button{
-    padding: 15px 40px;
-    background-color: var(--main-color);
-    color: #ffffff;
-    border-style: none;
-    border-radius: 20px;
-    font-size: 18px;
-}
-.carousel-section .content button:hover{
-    background-color: #ffffff;
-    transition: .3s ease-in-out;
-    color:  var(--main-color);
+
+@media (max-width: 600px) {
+    .carousel-section .content .sub-desc{
+        display: flex;
+        flex-direction: column;
+    }
+    .carousel-section .content a{
+        padding: 13px 15px;
+        font-size: 16px;
+        margin: 10px auto;
+    }
+    .carousel-section .content .title{
+        font-size: 35px;
+    }
+    .carousel-section .content .desc{
+        font-size: 18px;
+    }
 }
 .carousel-section .swiper {
     width: 100%;
@@ -305,22 +328,6 @@ body{
     top: 190px;
     width: 1px;
     z-index: 0;
-}
-
-@media (max-width: 600px) {
-    .carousel-section .content .custom-input-group{
-        width: 300px;
-    }
-    .carousel-section .content button{
-        padding: 13px 15px;
-        font-size: 16px;
-    }
-    .carousel-section .content .title{
-        font-size: 35px;
-    }
-    .carousel-section .content .desc{
-        font-size: 18px;
-    }
 }
 /*  End Carousel-section Style*/
 
