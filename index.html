@@ -16,14 +16,17 @@
     <!-- Navbar-->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
         <div class="container">
-            <a class="navbar-brand" href="#home">
-                <img src="images/logo.png" alt="Sewar" width="75">
-            </a>
             <div class="order-lg-last">
-                <button type="button" class="btn-link" data-bs-toggle="modal" data-bs-target="#login">
-                    تسجيل الدخول <i class="bi bi-person-fill"></i>
+                <button type="button" class="btn-link d-flex" data-bs-toggle="modal" data-bs-target="#login">
+                    <span class="d-lg-flex d-none">تسجيل الدخول</span>
+                    <span class="user-cyrcle">
+                        <i class="bi bi-person-fill"></i>
+                    </span>
                 </button>
             </div>
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="Sewar" width="75">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -79,9 +82,9 @@
         <div class="content">
             <p class="title">SEWARCO STORE</p>
             <p class="desc">جمالك بإكسسوارك</p>
-            <div class="custom-input-group">
-                <input type="text" placeholder="أدخل عنوان بريدك الالكتروني">
-                <button>التسجيل</button>
+            <div class="sub-desc">
+                <span>إكسسوارات عصرية لاطلالة مميزة</span>
+                <a href="product.html">تسوق الآن</a>
             </div>
         </div>
 
@@ -142,7 +145,7 @@
                         <li>احذية مميزة للعرائس</li>
                         <li>عقود وحلوق مميزة</li>
                     </ul>
-                    <a href="product.html" type="button" class="btn btn-light">
+                    <a href="product.html" type="button" class="btn btn-light d-md-block w-25 d-none">
                         اضغطِ للمزيد <i class="bi bi-plus-lg"></i>
                     </a>
                 </div>
@@ -157,6 +160,9 @@
                             <img src="images/slide-4.jpg" class="gallery_img img-fluid mb-4" alt="">
                         </div>
                     </div>
+                    <a href="product.html" type="button" class="btn btn-light w-100 d-md-none d-block">
+                        اضغطِ للمزيد <i class="bi bi-plus-lg"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -173,8 +179,9 @@
                     <form>
                         <div class="container">
                             <div class="row">
-                                <input type="text" class="form-control mb-3" placeholder="First name">
-                                <input type="text" class="form-control mb-3" placeholder="Last name">
+                                <input type="text" class="form-control mb-3" placeholder="الاسم الأول">
+                                <input type="text" class="form-control mb-3" placeholder="اسم العائلة">
+                                <input type="text" class="form-control mb-3" placeholder="رقم الجوال">
                                 <input class="form-control file mb-3" type="file">
                                 <button type="submit" class="btn btn-primary">طلب</button>
                             </div>
