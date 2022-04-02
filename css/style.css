@@ -99,7 +99,7 @@ body{
     font-size: 20px;
 }
 .navbar .btn-link:hover,
-.navbar .btn-link:hover > i{
+.navbar .btn-link:hover > .user-cyrcle i{
     color: var(--main-color);
 }
 .navbar-light .navbar-toggler {
